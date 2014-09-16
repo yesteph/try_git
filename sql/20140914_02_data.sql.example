@@ -1,0 +1,1 @@
+INSERT INTO data_table_1 (id, name, value) values (1, 'Data 1', 'Value of data 1');

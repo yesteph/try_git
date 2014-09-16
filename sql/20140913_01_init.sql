@@ -1,0 +1,1 @@
+CREATE TABLE data_table_1 (id INT PRIMARY KEY NOT NULL, name VARCHAR(100), value VARCHAR(100))
