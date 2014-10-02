@@ -2,4 +2,4 @@
 
 set -e
 
-salt-cloud -m cloud.profiles.d/platform.tpl -P --config-dir .
+./update.py demo-ptf infra_create
