@@ -1,0 +1,27 @@
+services:
+  - apache-webserver:
+    service_name: apache-webserver
+    type: ec2-vm
+    roles:
+      - commons.test
+      - apache.web.application1
+    instances:
+      - webserver-1
+    infra:
+        rename_on_destroy: True
+        provider: aws-test-config
+        image: ami-230b1b57
+        size: t1.micro
+        ssh_username: root
+        tag: {'Env': 'test'}
+        deploy: False
+        network_interfaces:
+          - DeviceIndex: 0
+            PrivateIpAddresses:
+              - Primary: True
+            #auto assign public ip (not EIP)
+            AssociatePublicIpAddress: True
+            SubnetId: subnet-525cb537
+            SecurityGroupId:
+              - sg-8a5aefef
+
