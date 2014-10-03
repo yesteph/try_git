@@ -1,0 +1,8 @@
+aws-test-config:
+  id: AKIAJPHJJD2TCJN5AGGQ
+  key: 'Lz7a0tQgH/gJ+ivnXz0D6nGOwpH9iiQJ8lBlm1Ng'
+  keyname: aws-perso
+  private_key: /root/aws-perso.pem
+  provider: ec2
+  location: eu-west-1
+
